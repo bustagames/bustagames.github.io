@@ -9,12 +9,26 @@
     body {
       background: linear-gradient(to bottom right, #22272e, #092d56, #22272e);
     }
+    .game-card {
+      background-color: #22272e;
+    }
   </style>
 </head>
-<body class="flex items-center justify-center h-screen text-white text-center px-4">
-<div>
-  <img src="busta.games_logo.webp" alt="Busta Games Logo" class="mx-auto w-80 mb-8" />
-  <p class="text-xl md:text-2xl opacity-75">Soon</p>
-</div>
+<body class="text-white px-4 py-8">
+
+<header class="text-center mb-12">
+  <img src="logo.webp" alt="Busta Games Logo" class="mx-auto w-80 mb-8" />
+</header>
+
+<section class="mb-16">
+  <div class="game-card max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-lg">
+    <img src="amimir.png" alt="A Mimir" class="w-full h-64 md:h-96 object-cover" />
+    <div class="p-6 md:p-8">
+      <h2 class="text-3xl md:text-4xl font-bold mb-2">A Mimir</h2>
+      <p class="text-lg opacity-90">Available on Google Play.</p>
+    </div>
+  </div>
+</section>
+
 </body>
 </html>
