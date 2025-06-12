@@ -1,0 +1,25 @@
+// 1. Your custom variables and variable overwrites.
+
+//$global-inverse-color: yellow;
+//$global-emphasis-color: $highlight-color-light;
+
+// 2. Import default variables and available mixins.
+@import "uikit/variables-theme.scss";
+@import "uikit/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+
+@import "uikit/uikit";
+@import "monokai";
+
+// 4. Your CSS
+
+// Custom overrides or additions
+
+body {
+  background: linear-gradient(to bottom right, #22272e, #092d56, #22272e);
+}
+
+.game-card {
+  background-color: #092d56;
+}

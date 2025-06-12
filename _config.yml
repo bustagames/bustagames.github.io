@@ -12,13 +12,13 @@ sass:
 
 # Collection Settings
 collections:
-  projects:
+  games:
     output: true
 
 defaults:
 - scope:
     path: ""
-    type: "projects"
+    type: "games"
   values:
     permalink: "/:collection/:name/"
 
