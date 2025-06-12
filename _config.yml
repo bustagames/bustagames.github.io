@@ -1,0 +1,26 @@
+# Site Settings
+title: 'busta.dev'
+description: >-
+  Busta Games Home Page
+url: https://busta.games
+
+# Build Settings
+permalink: "/blog/:year/:month/:day/:title/"
+sass:
+  sass_dir: "_sass"
+  style: compressed
+
+# Collection Settings
+collections:
+  projects:
+    output: true
+
+defaults:
+- scope:
+    path: ""
+    type: "projects"
+  values:
+    permalink: "/:collection/:name/"
+
+# Plugin Settings
+highlighter: rouge
