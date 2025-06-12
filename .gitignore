@@ -1,0 +1,7 @@
+# Jekyll Generated Files
+_site/
+.jekyll-cache/
+*__pycache__*
+node_modules/
+.idea/
+.sass-cache
