@@ -1,0 +1,25 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url={{ page.redirect }}">
+    <meta property="og:title" content="{{ page.desc }}"/>
+    <meta property="og:image" content="{{ page.preview }}"/>
+    <meta property="og:description" content="{{ page.desc }}"/>
+    <meta property="og:url" content="{{ page.redirect }}"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="627"/>
+    <meta property="og:type" content="website"/>
+
+    <title>{{ page.desc }}</title>
+    <script>
+        location.replace("{{ page.redirect }}")
+    </script>
+</head>
+<body style="background-color: black; color: white;">
+<a href="{{ page.redirect }}">If you are not redirected automatically, here is the link.</a>
+</body>
+</html>
