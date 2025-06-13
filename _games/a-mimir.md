@@ -6,4 +6,4 @@ android-url: https://play.google.com/store/apps/details?id=games.busta.mimir
 #steam-url: https://store.steampowered.com/app/12345/A_Mimir/
 #youtube-url: q0LFmmpghV0
 ---
-lorem ipsum
+A cute and cozy cat-filled puzzle game for everyone!

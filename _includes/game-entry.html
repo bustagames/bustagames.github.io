@@ -4,7 +4,9 @@
                  alt="{{ include.data.title }}"/>
             <div class="uk-card-body">
                 <h2>{{ include.data.title }}</h2>
-                <p>Available on Google Play.</p>
+                {{ include.data }}
+                <a href="{{ include.data.android-url }}" target="_blank" class="uk-button uk-button-primary">
+                    <span uk-icon="android-robot"></span> Google Play </a>
             </div>
         </div>
     </div>
