@@ -9,17 +9,34 @@ layout: compress
     <meta property="og:title" content="{{ page.desc }}"/>
     <meta property="og:image" content="{{ page.preview }}"/>
     <meta property="og:description" content="{{ page.desc }}"/>
-    <meta property="og:url" content="{{ page.redirect }}"/>
+    <meta property="og:url" content="{{ page.pc_redirect }}"/>
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="627"/>
     <meta property="og:type" content="website"/>
 
     <title>{{ page.desc }}</title>
     <script>
-        location.replace("{{ page.redirect }}")
+        const androidUrl = "{{ page.android_redirect }}";
+        const iosUrl = "{{ page.ios_redirect }}";
+        const pcUrl = "{{ page.pc_redirect }}";
+
+        function getPlatformRedirect() {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            if (/android/i.test(userAgent)) {
+                return androidUrl;
+            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                return iosUrl;
+            } else {
+                return pcUrl;
+            }
+        }
+
+        const redirectTo = getPlatformRedirect();
+        location.replace(redirectTo);
     </script>
 </head>
 <body style="background-color: black; color: white;">
-<a href="{{ page.redirect }}">If you are not redirected automatically, here is the link.</a>
+<a href="{{ page.pc_redirect }}">If you are not redirected automatically, here is the link.</a>
 </body>
 </html>
