@@ -1,3 +1,6 @@
+---
+layout: legal
+---
 **Terms & Conditions**
 
 These terms and conditions apply to the Lunar Tide app (hereby referred to as "Application") for mobile devices that was created by Busta Games and Software (hereby referred to as "Service Provider") as a Free service.

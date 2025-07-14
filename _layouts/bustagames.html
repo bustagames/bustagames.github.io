@@ -1,0 +1,80 @@
+---
+layout: compress
+---
+<!doctype html>
+<html lang="en">
+<head>
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="{{ site.title }}" property="og:title"/>
+    <meta content="{{ site.url }}/assets/images/preview.png" property="og:image"/>
+    <meta content="{{ site.description }}" property="og:description"/>
+    <meta content="{{ site.url }}" property="og:url"/>
+    <meta content="1200" property="og:image:width"/>
+    <meta content="627" property="og:image:height"/>
+    <meta content="website" property="og:type"/>
+    <link href="/favicon.ico?" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link href="/assets/css/bustagames-style.css" rel="stylesheet">
+    <script src="/assets/uikit/js/uikit.min.js"></script>
+    <script src="/assets/uikit/js/uikit-icons.min.js"></script>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+
+            const isDark = document.body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isDark);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const isDark = localStorage.getItem('darkMode') === 'true';
+            if (isDark) {
+                document.body.classList.add('dark-mode');
+            }
+            const toggle = document.getElementById('nav-toggle');
+            toggle.checked = isDark;
+        });
+    </script>
+</head>
+<body>
+
+{{ content }}
+
+<footer class="uk-section uk-section-small uk-text-center">
+    <div class="uk-container">
+        <h4 class="uk-heading-line uk-text-center">
+            <span>About Busta Games</span>
+        </h4>
+        <p>
+            We make games
+        </p>
+
+        <p>
+            Contact us: <a href="mailto:contact@busta.games">contact@busta.games</a>
+        </p>
+        <p> Busta Games and Software </p>
+        <p> CNPJ: 60.400.869/0001-55 </p>
+
+        <!--        <div class="uk-flex-center uk-margin" uk-grid>-->
+        <!--            <div>-->
+        <!--                <a href="#" uk-icon="icon: twitter" class="uk-icon-button" title="Twitter"></a>-->
+        <!--            </div>-->
+        <!--            <div>-->
+        <!--                <a href="#" uk-icon="icon: instagram" class="uk-icon-button" title="Instagram"></a>-->
+        <!--            </div>-->
+        <!--            <div>-->
+        <!--                <a href="#" uk-icon="icon: github" class="uk-icon-button" title="GitHub"></a>-->
+        <!--            </div>-->
+        <!--        </div>-->
+
+        <p class="uk-text-small uk-margin-top">
+            &copy; 2025 Busta Games. All rights reserved.
+        </p>
+
+    </div>
+</footer>
+
+</body>
+
+</html>
