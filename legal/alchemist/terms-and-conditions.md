@@ -1,0 +1,4 @@
+---
+layout: legal
+---
+**Terms & Conditions**
