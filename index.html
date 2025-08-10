@@ -2,39 +2,34 @@
 layout: bustagames
 title: Home
 ---
-<header class="uk-text-center uk-secton rb-title-section">
+<header class="uk-text-center uk-secton rb-section-header">
 <img src="logo.webp" alt="Busta Games Logo" style="width: 300px; padding-top: 50px; padding-bottom: 50px;"/>
 <div class="uk-flex-center" uk-grid>
     <div>
-        <a href="https://www.youtube.com/@bustadev" uk-icon="icon: youtube" class="uk-icon-button" title="Youtube"></a>
+        <a href="https://www.youtube.com/@bustadev" uk-icon="icon: youtube" class="rb-icon-button" title="Youtube"></a>
     </div>
     <div>
-        <a href="https://www.instagram.com/busta.games" uk-icon="icon: instagram" class="uk-icon-button"
+        <a href="https://www.instagram.com/busta.games" uk-icon="icon: instagram" class="rb-icon-button"
            title="Instagram"></a>
     </div>
     <div>
-        <a href="https://github.com/bustagames" uk-icon="icon: github" class="uk-icon-button" title="GitHub"></a>
+        <a href="https://github.com/bustagames" uk-icon="icon: github" class="rb-icon-button" title="GitHub"></a>
     </div>
 </div>
 </header>
     {% assign ordered_games = site.games | sort: "date" | reverse %}
     {% for game in ordered_games | sort: "game.date" | reverse %}
-<section class="uk-section rb-game-section">
+<section class="uk-section rb-section-game">
     {% include game-entry.html data=game %}
 </section>
     {% endfor %}
-<footer class="uk-section uk-section-small rb-title-section uk-text-center">
+<footer class="uk-section uk-section-small rb-section-footer uk-text-center">
     <div class="uk-container">
         <h4 class="uk-heading-line uk-text-center">
-            <span>About Busta Games</span>
+            <span class="rb-section-footer">About Busta Games</span>
         </h4>
-        <p>
-            We make games
-        </p>
-
-        <p>
-            Contact us: <a href="mailto:contact@busta.games">contact@busta.games</a>
-        </p>
+        <p>We make games</p>
+        <p>Contact us: <a href="mailto:contact@busta.games">contact@busta.games</a></p>
         <p> Busta Games and Software </p>
         <p> CNPJ: 60.400.869/0001-55 </p>
 

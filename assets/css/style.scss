@@ -15,13 +15,21 @@ $steam-color: #2a475e;
   align-items: center;
 }
 
-.rb-title-section {
-  background: linear-gradient(to right, #22272e, #22272e);
+.rb-section-header {
+  background: linear-gradient(to right, lighten(#22272e, 5%), #22272e);
+  margin: 0px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.rb-section-footer {
+  background: linear-gradient(to right, lighten(#22272e, 5%), #22272e);
+  color: white;
   margin: 0px;
 }
 
-.rb-game-section {
-  background: linear-gradient(to right, #22272e, #22272e);
+.rb-section-game {
+  background: linear-gradient(to right, #22272e, darken(#22272e, 5%));
   margin: 0px;
 }
 
@@ -42,6 +50,7 @@ $steam-color: #2a475e;
   text-decoration: none;
   display: block;
   margin: 0.5rem;
+  text-align: center;
 }
 
 .rb-button:hover {
@@ -86,4 +95,17 @@ $steam-color: #2a475e;
   border-radius: 20%;
   width: 6rem;
   height: 6rem;
+}
+
+.rb-icon-button{
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  align-content: center;
+  border-radius: 100%;
+  background-color: #333;
+}
+
+.rb-icon-button:hover{
+  color: lightgray;
 }

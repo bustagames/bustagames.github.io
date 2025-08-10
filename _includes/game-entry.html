@@ -1,18 +1,26 @@
-    <div class="uk-container uk-container-small uk-padding">
-        <div class="uk-card uk-card-secondary uk-border-rounded">
-            <img class="uk-border-rounded" src="assets/games/{{ include.data.slug | lowercase }}/banner.webp"
-                 alt="{{ include.data.title }}"/>
-            <div class="uk-card-body">
-                <h2>{{ include.data.title }}</h2>
+<div class="uk-container uk-container-small uk-padding">
+    <div class="uk-card uk-card-secondary uk-border-rounded">
+        <img class="uk-border-rounded" src="assets/games/{{ include.data.slug | lowercase }}/banner.webp"
+             alt="{{ include.data.title }}"/>
+        <div class="uk-card-body">
+            <h2>{{ include.data.title }}</h2>
 
-                {% if include.data.android-url %}
-                <a href="{{ include.data.android-url }}" target="_blank" class="uk-button rb-button rb-android-button">
-                    <span uk-icon="android-robot"></span> Google Play </a>
-                {% endif %}
-                {% if include.data.ios-url %}
-                <a href="{{ include.data.ios-url }}" target="_blank" class="uk-button rb-button rb-ios-button">
-                    <span uk-icon="apple"></span> App Store </a>
-                {% endif %}
-            </div>
+            {% if include.data.android-url %}
+            <a href="{{ include.data.android-url }}" target="_blank" class="rb-button rb-android-button">
+                <span uk-icon="android-robot"></span> Google Play </a>
+            {% endif %}
+            {% if include.data.ios-url %}
+            <a href="{{ include.data.ios-url }}" target="_blank" class="rb-button rb-ios-button">
+                <span uk-icon="apple"></span> App Store </a>
+            {% endif %}
+            {% if include.data.web-url %}
+            <a href="{{ include.data.web-url }}" target="_blank" class="rb-button rb-web-button">
+                <span uk-icon="world"></span> Itch.io </a>
+            {% endif %}
+            {% if include.data.steam-url %}
+            <a href="{{ include.data.steam-url }}" target="_blank" class="rb-button rb-steam-button">
+                <span uk-icon="link"></span> Steam </a>
+            {% endif %}
         </div>
     </div>
+</div>
