@@ -2,9 +2,9 @@
 layout: bustagames
 title: Home
 ---
-<header class="uk-text-center uk-secton uk-section-default">
+<header class="uk-text-center uk-secton rb-title-section">
 <img src="logo.webp" alt="Busta Games Logo" style="width: 300px; padding-top: 50px; padding-bottom: 50px;"/>
-<div class="uk-flex-center uk-margin" uk-grid>
+<div class="uk-flex-center" uk-grid>
     <div>
         <a href="https://www.youtube.com/@bustadev" uk-icon="icon: youtube" class="uk-icon-button" title="Youtube"></a>
     </div>
@@ -17,13 +17,13 @@ title: Home
     </div>
 </div>
 </header>
-<div>
     {% assign ordered_games = site.games | sort: "date" | reverse %}
     {% for game in ordered_games | sort: "game.date" | reverse %}
+<section class="uk-section rb-game-section">
     {% include game-entry.html data=game %}
+</section>
     {% endfor %}
-</div>
-<footer class="uk-section uk-section-small uk-section-primary uk-text-center">
+<footer class="uk-section uk-section-small rb-title-section uk-text-center">
     <div class="uk-container">
         <h4 class="uk-heading-line uk-text-center">
             <span>About Busta Games</span>

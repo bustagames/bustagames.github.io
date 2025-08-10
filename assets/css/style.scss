@@ -3,11 +3,26 @@
 
 @import "main";
 
+$ios-color: #0070f3;
+$android-color: #34a853;
+$web-color: #da2c49;
+$steam-color: #2a475e;
+
 .rb-redirect-body {
   background: linear-gradient(to right, #f5f7fa, #c3cfe2);
   height: 100vh;
   display: flex;
   align-items: center;
+}
+
+.rb-title-section {
+  background: linear-gradient(to right, #22272e, #22272e);
+  margin: 0px;
+}
+
+.rb-game-section {
+  background: linear-gradient(to right, #22272e, #22272e);
+  margin: 0px;
 }
 
 .rb-game-card {
@@ -36,35 +51,35 @@
 }
 
 .rb-ios-button {
-  background-color: #0070f3;
+  background-color: $ios-color;
 }
 
 .rb-ios-button:hover {
-  background-color: lighten(#0070f3, 10%);
+  background-color: lighten($ios-color, 10%);
 }
 
 .rb-android-button {
-  background-color: #34a853;
+  background-color: $android-color;
 }
 
 .rb-android-button:hover {
-  background-color: lighten(#34a853, 10%);
+  background-color: lighten($android-color, 10%);
 }
 
 .rb-web-button {
-  background-color: #da2c49;
+  background-color: $web-color;
 }
 
 .rb-web-button:hover {
-  background-color: lighten(#da2c49, 10%);
+  background-color: lighten($web-color, 10%);
 }
 
 .rb-steam-button {
-  background-color: #2a475e;
+  background-color: $steam-color;
 }
 
 .rb-steam-button:hover {
-  background-color: lighten(#2a475e, 10%);
+  background-color: lighten($steam-color, 10%);
 }
 
 .rb-app-icon {
