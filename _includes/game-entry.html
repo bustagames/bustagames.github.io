@@ -1,10 +1,10 @@
     <div class="uk-container uk-container-small uk-padding">
         <div class="uk-card uk-card-secondary uk-border-rounded">
-            <img class="uk-border-rounded" src="assets/games/{{ include.data.slug | lowercase }}.webp"
+            <img class="uk-border-rounded" src="assets/games/{{ include.data.slug | lowercase }}/banner.webp"
                  alt="{{ include.data.title }}"/>
             <div class="uk-card-body">
                 <h2>{{ include.data.title }}</h2>
-                {{ include.data }}
+
                 {% if include.data.android-url %}
                 <a href="{{ include.data.android-url }}" target="_blank" class="uk-button rb-button rb-android-button">
                     <span uk-icon="android-robot"></span> Google Play </a>

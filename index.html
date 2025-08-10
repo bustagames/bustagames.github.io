@@ -2,11 +2,45 @@
 layout: bustagames
 title: Home
 ---
-<header class="uk-container uk-container-small uk-text-center">
-    <img src="logo.webp" alt="Busta Games Logo" style="width: 300px; padding-top: 50px; padding-bottom: 50px;"/>
+<header class="uk-text-center uk-secton uk-section-default">
+<img src="logo.webp" alt="Busta Games Logo" style="width: 300px; padding-top: 50px; padding-bottom: 50px;"/>
+<div class="uk-flex-center uk-margin" uk-grid>
+    <div>
+        <a href="https://www.youtube.com/@bustadev" uk-icon="icon: youtube" class="uk-icon-button" title="Youtube"></a>
+    </div>
+    <div>
+        <a href="https://www.instagram.com/busta.games" uk-icon="icon: instagram" class="uk-icon-button"
+           title="Instagram"></a>
+    </div>
+    <div>
+        <a href="https://github.com/bustagames" uk-icon="icon: github" class="uk-icon-button" title="GitHub"></a>
+    </div>
+</div>
 </header>
+<div>
+    {% assign ordered_games = site.games | sort: "date" | reverse %}
+    {% for game in ordered_games | sort: "game.date" | reverse %}
+    {% include game-entry.html data=game %}
+    {% endfor %}
+</div>
+<footer class="uk-section uk-section-small uk-section-primary uk-text-center">
+    <div class="uk-container">
+        <h4 class="uk-heading-line uk-text-center">
+            <span>About Busta Games</span>
+        </h4>
+        <p>
+            We make games
+        </p>
 
-{% for game in site.games %}
-{% include game-entry.html data=game %}
-{% endfor %}
+        <p>
+            Contact us: <a href="mailto:contact@busta.games">contact@busta.games</a>
+        </p>
+        <p> Busta Games and Software </p>
+        <p> CNPJ: 60.400.869/0001-55 </p>
 
+        <p class="uk-text-small uk-margin-top">
+            &copy; 2025 Busta Games. All rights reserved.
+        </p>
+
+    </div>
+</footer>

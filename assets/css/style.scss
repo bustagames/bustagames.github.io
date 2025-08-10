@@ -3,7 +3,7 @@
 
 @import "main";
 
-.rb-body {
+.rb-redirect-body {
   background: linear-gradient(to right, #f5f7fa, #c3cfe2);
   height: 100vh;
   display: flex;
@@ -29,12 +29,18 @@
   margin: 0.5rem;
 }
 
+.rb-button:hover {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .rb-ios-button {
   background-color: #0070f3;
 }
 
 .rb-ios-button:hover {
-  background-color: #005bb5;
+  background-color: lighten(#0070f3, 10%);
 }
 
 .rb-android-button {
@@ -42,7 +48,23 @@
 }
 
 .rb-android-button:hover {
-  background-color: #2c8b46;
+  background-color: lighten(#34a853, 10%);
+}
+
+.rb-web-button {
+  background-color: #da2c49;
+}
+
+.rb-web-button:hover {
+  background-color: lighten(#da2c49, 10%);
+}
+
+.rb-steam-button {
+  background-color: #2a475e;
+}
+
+.rb-steam-button:hover {
+  background-color: lighten(#2a475e, 10%);
 }
 
 .rb-app-icon {

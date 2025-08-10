@@ -1,9 +1,10 @@
 ---
+layout: redirect
 title: "Lunar Tide"
-date: "19-09-2023"
+date: "22-01-2017"
 android-url: https://play.google.com/store/apps/details?id=games.busta.lunartide
-#ios-url: https://apps.apple.com/de/app/ghost-detective/id6446073149
-#steam-url: https://store.steampowered.com/app/12345/A_Mimir/
-#youtube-url: q0LFmmpghV0
+#ios-url: https://apps.apple.com/app/lunar-tide/some-id
+#steam-url: https://store.steampowered.com/app/12345/LunarTide/
+#youtube-url: 
 ---
 defend the planet by controlling the moon base!

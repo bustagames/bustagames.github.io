@@ -20,7 +20,7 @@ defaults:
     path: ""
     type: "games"
   values:
-    permalink: "/:collection/:name/"
+    permalink: "/:slug"
 
 # Plugin Settings
 highlighter: rouge
