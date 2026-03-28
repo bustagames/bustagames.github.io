@@ -4,27 +4,25 @@ Busta Games Home Page
 
 # Setup
 
-Needs to install Ruby in order to execute bundle commands
+This site is built with Jekyll and is pinned to the GitHub Pages dependency set.
 
-On MacOS make sure you are not using system's Ruby.
-Install brew, then ruby, and add everything to appropriate .profile
+Use Ruby `3.3.4` locally. The repository includes `.ruby-version` so version managers such as `rbenv`, `asdf`, or `mise` can pick it up automatically.
 
-# To start using the project, run the following command to install dependencies:
+On macOS, avoid the system Ruby. Install a user-managed Ruby and Bundler, then install gems from the lockfile:
 
 ```sh
-gem update
+bundle install
 ```
 
 # Commands
 
-## Publish
+## Serve locally
 ```sh
 bundle exec jekyll serve
 ```
 
-## Update
+## Update Ruby dependencies
 ```sh
-bundle
 bundle update
 ```
 
@@ -39,21 +37,12 @@ Enable draft posts in order to preview them
 bundle exec jekyll serve --drafts
 ```
 
-## UiKit setup
+## Python image conversion helper
 
-```
-npm install -g yarn
-yarn
-yarn compile
-yarn watch
-```
+If you want to convert images to `.webp`, use the Python helper:
 
-## Update project pictures
-
-place source images under `_srcassets/projects`
-then run
-```shell
-node .\generateAssets.js 
+```sh
+python image-converter.py path/to/image.png
 ```
 
 ## Check Gem versions

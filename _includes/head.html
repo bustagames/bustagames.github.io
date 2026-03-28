@@ -1,0 +1,28 @@
+{% assign theme_color = include.theme_color | default: "#111827" %}
+{% assign stylesheet = include.stylesheet | default: "/assets/css/style.css" %}
+{% assign page_title = page.title | default: site.data.company.name %}
+{% assign meta_title = page_title | append: " - " | append: site.title %}
+{% assign meta_description = page.description | default: page.excerpt | default: site.description %}
+{% assign og_url = page.url | absolute_url %}
+{% assign og_image = page.og_image | default: "/logo.webp" | absolute_url %}
+<head>
+    <title>{{ meta_title }}</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="{{ meta_description | strip_html | normalize_whitespace | escape }}" name="description">
+    <meta content="{{ theme_color }}" name="theme-color">
+    <meta content="{{ meta_title | escape }}" property="og:title">
+    <meta content="{{ og_image }}" property="og:image">
+    <meta content="{{ meta_description | strip_html | normalize_whitespace | escape }}" property="og:description">
+    <meta content="{{ og_url }}" property="og:url">
+    <meta content="1200" property="og:image:width">
+    <meta content="627" property="og:image:height">
+    <meta content="website" property="og:type">
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="{{ stylesheet }}" rel="stylesheet">
+    <script defer src="/assets/uikit/js/uikit.min.js"></script>
+    <script defer src="/assets/uikit/js/uikit-icons.min.js"></script>
+</head>

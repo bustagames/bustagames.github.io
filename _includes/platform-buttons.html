@@ -1,0 +1,14 @@
+{% assign platforms = "android,ios,web,steam" | split: "," %}
+<div class="rb-platform-list">
+    {% for platform_key in platforms %}
+    {% assign url_key = platform_key | append: "-url" %}
+    {% assign platform_url = include.game[url_key] %}
+    {% assign platform = site.data.platforms[platform_key] %}
+    {% if platform_url %}
+    <a class="rb-platform-button {{ platform.class_name }}" href="{{ platform_url }}" target="_blank" rel="noreferrer">
+        <span uk-icon="icon: {{ platform.icon }}"></span>
+        <span>{{ platform.label }}</span>
+    </a>
+    {% endif %}
+    {% endfor %}
+</div>

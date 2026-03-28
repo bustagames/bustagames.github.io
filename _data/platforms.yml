@@ -1,0 +1,16 @@
+android:
+  label: Google Play
+  icon: android-robot
+  class_name: rb-platform-button--android
+ios:
+  label: App Store
+  icon: apple
+  class_name: rb-platform-button--ios
+web:
+  label: Itch.io
+  icon: world
+  class_name: rb-platform-button--web
+steam:
+  label: Steam
+  icon: desktop
+  class_name: rb-platform-button--steam

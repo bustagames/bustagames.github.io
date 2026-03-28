@@ -1,0 +1,17 @@
+{% assign company = site.data.company %}
+<header class="rb-hero">
+    <div class="uk-container">
+        <div class="rb-hero__inner">
+            <div class="rb-hero__brand">
+                <img class="rb-brand-card__logo" src="/logo.webp" alt="{{ company.name }} logo">
+                <p class="rb-hero__body">{{ company.hero.body }}</p>
+                <div class="rb-social-links" aria-label="Social links">
+                    <a class="rb-social-link" href="mailto:{{ company.email }}" aria-label="Email" title="Email">
+                        <span uk-icon="icon: mail"></span>
+                    </a>
+                    {% include social-links.html %}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

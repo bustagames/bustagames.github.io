@@ -1,0 +1,24 @@
+name: Busta Games
+site_name: busta.dev
+tagline: Published games by Busta Games.
+description: Busta Games showcases published titles with store links for every available platform.
+email: contact@busta.games
+legal_name: Busta Games and Software
+registration_label: CNPJ
+registration_value: 60.400.869/0001-55
+copyright_name: Busta Games
+hero:
+  body: Creating games for Mobile, Desktop and Web.
+about:
+  title: About Busta Games
+  body: Independent game studio publishing titles for mobile, desktop, and web.
+social_links:
+  - label: YouTube
+    href: https://www.youtube.com/@bustadev
+    icon: youtube
+  - label: Instagram
+    href: https://www.instagram.com/busta.games
+    icon: instagram
+  - label: GitHub
+    href: https://github.com/bustagames
+    icon: github
