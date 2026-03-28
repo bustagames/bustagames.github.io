@@ -14,9 +14,9 @@ $rb-accent: #73e0a9;
 $rb-accent-strong: #3cbf86;
 $rb-highlight: #57b0ff;
 $rb-shadow: 0 32px 80px rgba(0, 0, 0, 0.32);
-$rb-radius-lg: 32px;
-$rb-radius-md: 22px;
-$rb-radius-sm: 16px;
+$rb-radius-lg: 22px;
+$rb-radius-md: 18px;
+$rb-radius-sm: 14px;
 
 $rb-platform-android: linear-gradient(135deg, #46d17d, #249a54);
 $rb-platform-ios: linear-gradient(135deg, #70b7ff, #2161ff);
@@ -25,6 +25,12 @@ $rb-platform-steam: linear-gradient(135deg, #295b86, #11263f);
 
 html {
   scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
@@ -118,9 +124,10 @@ a {
   align-items: center;
   justify-content: center;
   gap: 0.65rem;
+  width: 100%;
   min-height: 52px;
   border: 1px solid transparent;
-  border-radius: 999px;
+  border-radius: $rb-radius-md;
   font-weight: 800;
   text-decoration: none;
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
@@ -148,7 +155,7 @@ a {
   width: 3rem;
   height: 3rem;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 999px;
+  border-radius: 18px;
   background: rgba(255, 255, 255, 0.05);
   color: $rb-text;
   transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
@@ -271,6 +278,7 @@ a {
 }
 
 .rb-platform-button {
+  flex: 1 1 180px;
   padding: 0.9rem 1.2rem;
   color: #fff;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
@@ -404,7 +412,7 @@ a {
   }
 
   .rb-platform-button {
-    width: 100%;
+    flex-basis: auto;
   }
 
   .rb-game-card__content,
@@ -416,6 +424,6 @@ a {
   .rb-app-icon {
     width: 60px;
     height: 60px;
-    border-radius: 18px;
+    border-radius: 16px;
   }
 }
