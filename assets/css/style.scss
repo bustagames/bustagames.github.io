@@ -392,13 +392,23 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .rb-site-footer__grid,
-  .rb-site-footer__bottom {
+  .rb-site-footer__grid {
     flex-direction: column;
+  }
+
+  .rb-site-footer__bottom {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   .rb-site-footer__meta {
     text-align: left;
+  }
+
+  .rb-site-footer__bottom p {
+    margin-left: 0;
+    width: 100%;
   }
 }
 
