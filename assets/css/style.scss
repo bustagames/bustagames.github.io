@@ -25,6 +25,10 @@ $rb-platform-steam: linear-gradient(135deg, #295b86, #11263f);
 
 html {
   scroll-behavior: smooth;
+  background:
+    radial-gradient(circle at top left, rgba(87, 176, 255, 0.22), transparent 28%),
+    radial-gradient(circle at top right, rgba(115, 224, 169, 0.18), transparent 24%),
+    linear-gradient(180deg, #0b1424 0%, #08101d 42%, #060b14 100%);
 }
 
 *,
@@ -35,6 +39,7 @@ html {
 
 body {
   margin: 0;
+  min-height: 100vh;
   font-family: "Manrope", sans-serif;
   color: $rb-text;
   background:
@@ -260,9 +265,11 @@ a {
 .rb-game-card__title {
   font-size: clamp(1.65rem, 3vw, 2.4rem);
   line-height: 1;
+  color: $rb-text;
 }
 
 .rb-game-card__title a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -325,6 +332,7 @@ a {
 
 .rb-site-footer__title {
   font-size: 2rem;
+  color: $rb-text;
 }
 
 .rb-site-footer__body,
